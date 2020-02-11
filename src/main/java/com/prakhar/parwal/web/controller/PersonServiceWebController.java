@@ -21,4 +21,11 @@ public class PersonServiceWebController {
 		ModelAndView signUpPage = new ModelAndView("signUp");
 		return signUpPage;
 	}
+	
+	@GetMapping("/logIn")
+	public ModelAndView showLogInPage() {
+		
+		ModelAndView logInPage = new ModelAndView("logIn");
+		return logInPage;
+	}
 }
