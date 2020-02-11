@@ -13,4 +13,12 @@ public class PersonServiceWebController {
 		ModelAndView homePage = new ModelAndView("home");
 		return homePage;
 	}
+	
+	
+	@GetMapping("/signUp")
+	public ModelAndView showSignUpPage() {
+		
+		ModelAndView signUpPage = new ModelAndView("signUp");
+		return signUpPage;
+	}
 }
