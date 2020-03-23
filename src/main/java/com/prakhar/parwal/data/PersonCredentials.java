@@ -1,16 +1,32 @@
 package com.prakhar.parwal.data;
 
-public class UserCredentials {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "PERSON_CREDENTIALS")
+public class PersonCredentials {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "PERSON_CREDENTIALS_ID")
 	private int credential_id;
+	
+	@Column(name = "USERNAME")
 	private String username;
+	
+	@Column(name = "PASSWORD")
 	private String password;
 	
-	public UserCredentials() {
+	public PersonCredentials() {
 		
 	}
 
-	public UserCredentials(int credential_id, String username, String password) {
+	public PersonCredentials(int credential_id, String username, String password) {
 		super();
 		this.credential_id = credential_id;
 		this.username = username;

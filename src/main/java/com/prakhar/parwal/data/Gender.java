@@ -4,7 +4,7 @@ public enum Gender {
 
 	NOT_SPECIFIED(0),
 	MALE(1),
-	FEMAL(2);
+	FEMALE(2);
 	
 	private int value;
 	
